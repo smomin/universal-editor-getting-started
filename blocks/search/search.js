@@ -29,69 +29,69 @@ export default function decorate(block) {
   //   .then(async (response) => {
   //     const { data } = await response.json();
   //     const config = new Map(data.map((obj) => [obj.name, obj.value]));
-  //
-  //     const searchClient = algoliasearch(
-  //       config.get('appId'),
-  //       config.get('searchApiKey'),
-  //     );
-  //
-  //     const search = instantsearch({
-  //       indexName: config.get('indexName'),
-  //       searchClient,
-  //       insights: true,
-  //       routing: {
-  //         stateMapping: {
-  //           stateToRoute(uiState) {
-  //             return {
-  //               query: uiState[config.get('indexName')].query,
-  //             };
-  //           },
-  //           routeToState(routeState) {
-  //             return {
-  //               [config.get('indexName')]: {
-  //                 query: routeState.query,
-  //               },
-  //             };
-  //           },
-  //         },
-  //       },
-  //     });
-  //
-  //     search.addWidgets([
-  //       searchBox({
-  //         container: '#searchbox',
-  //         placeholder: config.get('placeholder'),
-  //         autofocus: false,
-  //         searchAsYouType: true,
-  //         searchParameters: {
-  //           query,
-  //         },
-  //       }),
-  //       hits({
-  //         container: '#hits',
-  //         templates: {
-  //           item: (hit, { html, components }) => html`
-  //       <article>
-  //         <h1>${components.Highlight({ hit, attribute: 'name' })}</h1>
-  //         <p>${components.Highlight({ hit, attribute: 'description' })}</p>
-  //       </article>
-  //     `,
-  //         },
-  //       }),
-  //       configure({
-  //         hitsPerPage: 8,
-  //       }),
-  //       panel({
-  //         templates: { header: 'brand' },
-  //       })(refinementList)({
-  //         container: '#brand-list',
-  //         attribute: 'brand',
-  //       }),
-  //       pagination({
-  //         container: '#pagination',
-  //       }),
-  //     ]);
-  //
-  //     search.start();
-  //   });
+
+      const searchClient = algoliasearch(
+        '0EXRPAXB56',
+        '4350d61521979144d2012720315f5fc6',
+      );
+
+      const search = instantsearch({
+        indexName: 'WKND_Commerce_PROD_US_EN_Pages',
+        searchClient,
+        insights: true,
+        routing: {
+          stateMapping: {
+            stateToRoute(uiState) {
+              return {
+                query: uiState['WKND_Commerce_PROD_US_EN_Pages'].query,
+              };
+            },
+            routeToState(routeState) {
+              return {
+                ['WKND_Commerce_PROD_US_EN_Pages']: {
+                  query: routeState.query,
+                },
+              };
+            },
+          },
+        },
+      });
+
+      search.addWidgets([
+        searchBox({
+          container: '#searchbox',
+          placeholder: 'Enter your query',
+          autofocus: false,
+          searchAsYouType: true,
+          searchParameters: {
+            query,
+          },
+        }),
+        hits({
+          container: '#hits',
+          templates: {
+            item: (hit, { html, components }) => html`
+        <article>
+          <h1>${components.Highlight({ hit, attribute: 'name' })}</h1>
+          <p>${components.Highlight({ hit, attribute: 'description' })}</p>
+        </article>
+      `,
+          },
+        }),
+        configure({
+          hitsPerPage: 8,
+        }),
+        panel({
+          templates: { header: 'brand' },
+        })(refinementList)({
+          container: '#brand-list',
+          attribute: 'brand',
+        }),
+        pagination({
+          container: '#pagination',
+        }),
+      ]);
+
+      search.start();
+    // });
 }

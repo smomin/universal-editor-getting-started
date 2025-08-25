@@ -5,20 +5,20 @@ export default function decorate(block) {
   const { algoliasearch } = window;
   const { autocomplete, getAlgoliaResults } = window['@algolia/autocomplete-js'];
 
-  fetch('/config/algolia.json')
-    .then(async (response) => {
-      const { data } = await response.json();
-      const config = new Map(data.map((obj) => [obj.name, obj.value]));
+  // fetch('/config/algolia.json')
+  //   .then(async (response) => {
+  //     const { data } = await response.json();
+  //     const config = new Map(data.map((obj) => [obj.name, obj.value]));
       const searchClient = algoliasearch(
-        config.get('appId'),
-        config.get('searchApiKey'),
+        '0EXRPAXB56',
+        '4350d61521979144d2012720315f5fc6',
       );
 
       autocomplete({
         container: block,
-        placeholder: config.get('placeholder'),
+        placeholder: 'Enter your query',
         onSubmit({ state }) {
-          window.location.href = `${config.get('resultUrl')}?query=${state.query}&queryID=${state.context.queryID}`;
+          window.location.href = `?query=${state.query}&queryID=${state.context.queryID}`;
         },
         getSources({ query }) {
           return [
@@ -29,7 +29,7 @@ export default function decorate(block) {
                   searchClient,
                   queries: [
                     {
-                      indexName: config.get('indexName'),
+                      indexName: 'WKND_Commerce_PROD_US_EN_Pages',
                       clickAnalytics: true,
                       query,
                       params: {
@@ -114,5 +114,5 @@ export default function decorate(block) {
           ];
         },
       });
-    });
+    // });
 }
