@@ -216,13 +216,13 @@
     ]
   },
   {
-    "id": "instantsearch",
+    "id": "search-results",
     "fields": [
 
     ]
   },
   {
-    "id": "autocomplete",
+    "id": "global-search",
     "fields": [
 
     ]

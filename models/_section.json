@@ -51,8 +51,8 @@
         "cards",
         "columns",
         "fragment",
-        "instantsearch",
-        "autocomplete"
+        "search-results",
+        "global-search"
       ]
     }
   ]
