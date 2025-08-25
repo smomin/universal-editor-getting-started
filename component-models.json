@@ -216,55 +216,15 @@
     ]
   },
   {
-    "id": "search",
+    "id": "instantsearch",
     "fields": [
-      {
-        "component": "text",
-        "valueType": "string",
-        "name": "appId",
-        "label": "Application Id",
-        "value": ""
-      },
-      {
-        "component": "text",
-        "valueType": "string",
-        "name": "apiKey",
-        "label": "Search API Id",
-        "value": ""
-      },
-      {
-        "component": "richtext",
-        "name": "hitTemplate",
-        "value": "",
-        "label": "Hit Template",
-        "valueType": "string"
-      }
+
     ]
   },
   {
     "id": "autocomplete",
     "fields": [
-      {
-        "component": "text",
-        "valueType": "string",
-        "name": "appId",
-        "label": "Application Id",
-        "value": ""
-      },
-      {
-        "component": "text",
-        "valueType": "string",
-        "name": "apiKey",
-        "label": "Search API Id",
-        "value": ""
-      },
-      {
-        "component": "richtext",
-        "name": "hitTemplate",
-        "value": "",
-        "label": "Hit Template",
-        "valueType": "string"
-      }
+
     ]
   }
 ]
