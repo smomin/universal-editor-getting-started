@@ -218,13 +218,39 @@
   {
     "id": "search-results",
     "fields": [
-
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "appId",
+        "label": "Algolia App Id",
+        "value": ""
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "apiKey",
+        "label": "Algolia API Key",
+        "value": ""
+      }
     ]
   },
   {
     "id": "global-search",
     "fields": [
-
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "appId",
+        "label": "Algolia App Id",
+        "value": ""
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "apiKey",
+        "label": "Algolia API Key",
+        "value": ""
+      }
     ]
   }
 ]
