@@ -1,0 +1,53 @@
+{
+  "definitions": [
+    {
+      "title": "Search Index",
+      "id": "search-index",
+      "plugins": {
+        "xwalk": {
+          "page": {
+            "resourceType": "algolia-aem-universal-editor/components/index",
+            "template": {
+              "name": "Search Index",
+              "model": "search-index"
+            }
+          }
+        }
+      }
+    }
+  ],
+  "models": [
+    {
+      "id": "search-index",
+      "fields": [
+        {
+          "component": "text",
+          "valueType": "string",
+          "name": "indexName",
+          "label": "Index Name",
+          "value": ""
+        },
+        {
+          "component": "aem-content",
+          "name": "hitTemplate",
+          "label": "Hit Template",
+          "value": ""
+        },
+        {
+          "component": "aem-content",
+          "name": "noResultsTemplate",
+          "label": "No Results Template",
+          "value": ""
+        }
+      ]
+    }
+  ],
+  "filters": [
+    {
+      "id": "search-results",
+      "components": [
+        "search-index"
+      ]
+    }
+  ]
+}

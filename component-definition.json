@@ -163,7 +163,7 @@
           "plugins": {
             "xwalk": {
               "page": {
-                "resourceType": "algolia-aem-universal-editor/components/Autocomplete",
+                "resourceType": "algolia-aem-universal-editor/components/autocomplete",
                 "template": {
                   "name": "Global Search",
                   "model": "global-search"
@@ -178,7 +178,7 @@
           "plugins": {
             "xwalk": {
               "page": {
-                "resourceType": "algolia-aem-universal-editor/components/InstantSearch",
+                "resourceType": "algolia-aem-universal-editor/components/instantsearch",
                 "template": {
                   "name": "Search Results",
                   "model": "search-results"
@@ -193,7 +193,7 @@
           "plugins": {
             "xwalk": {
               "page": {
-                "resourceType": "algolia-aem-universal-editor/components/Index",
+                "resourceType": "algolia-aem-universal-editor/components/index",
                 "template": {
                   "name": "Search Index",
                   "model": "search-index"

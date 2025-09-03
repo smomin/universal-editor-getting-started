@@ -6,7 +6,7 @@
       "plugins": {
         "xwalk": {
           "page": {
-            "resourceType": "core/franklin/components/block/v1/block",
+            "resourceType": "algolia-aem-universal-editor/components/instantsearch",
             "template": {
               "name": "Search Results",
               "model": "search-results"
@@ -17,7 +17,32 @@
     }
   ],
   "models": [
-
+    {
+      "id": "search-results",
+      "fields": [
+        {
+          "component": "text",
+          "valueType": "string",
+          "name": "appId",
+          "label": "App Id",
+          "value": ""
+        },
+        {
+          "component": "text",
+          "valueType": "string",
+          "name": "apiKey",
+          "label": "API Key",
+          "value": ""
+        }
+      ]
+    }
   ],
-  "filters": []
+  "filters": [
+    {
+      "id": "search-results",
+      "components": [
+        "search-index"
+      ]
+    }
+  ]
 }
