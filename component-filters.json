@@ -40,5 +40,17 @@
       "button",
       "title"
     ]
+  },
+  {
+    "id": "global-search",
+    "components": [
+      "search-index"
+    ]
+  },
+  {
+    "id": "search-results",
+    "components": [
+      "search-index"
+    ]
   }
 ]

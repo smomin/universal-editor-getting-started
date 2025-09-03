@@ -222,14 +222,14 @@
         "component": "text",
         "valueType": "string",
         "name": "appId",
-        "label": "Algolia App Id",
+        "label": "App Id",
         "value": ""
       },
       {
         "component": "text",
         "valueType": "string",
         "name": "apiKey",
-        "label": "Algolia API Key",
+        "label": "API Key",
         "value": ""
       }
     ]
@@ -241,16 +241,41 @@
         "component": "text",
         "valueType": "string",
         "name": "appId",
-        "label": "Algolia App Id",
+        "label": "App Id",
         "value": ""
       },
       {
         "component": "text",
         "valueType": "string",
         "name": "apiKey",
-        "label": "Algolia API Key",
+        "label": "API Key",
+        "value": ""
+      }
+    ]
+  },
+  {
+    "id": "search-index",
+    "fields": [
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "indexName",
+        "label": "Index Name",
+        "value": ""
+      },
+      {
+        "component": "aem-content",
+        "name": "hitTemplate",
+        "label": "Hit Template",
+        "value": ""
+      },
+      {
+        "component": "aem-content",
+        "name": "noResultsTemplate",
+        "label": "No Results Template",
         "value": ""
       }
     ]
   }
+
 ]
