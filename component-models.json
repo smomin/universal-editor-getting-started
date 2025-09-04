@@ -223,14 +223,16 @@
         "valueType": "string",
         "name": "appId",
         "label": "App Id",
-        "value": ""
+        "value": "",
+        "hidden": true
       },
       {
         "component": "text",
         "valueType": "string",
         "name": "apiKey",
         "label": "API Key",
-        "value": ""
+        "value": "",
+        "hidden": true
       }
     ]
   },
@@ -242,14 +244,16 @@
         "valueType": "string",
         "name": "appId",
         "label": "App Id",
-        "value": ""
+        "value": "",
+        "hidden": true
       },
       {
         "component": "text",
         "valueType": "string",
         "name": "apiKey",
         "label": "API Key",
-        "value": ""
+        "value": "",
+        "hidden": true
       }
     ]
   },
@@ -261,19 +265,22 @@
         "valueType": "string",
         "name": "indexName",
         "label": "Index Name",
-        "value": ""
+        "value": "",
+        "hidden": true
       },
       {
         "component": "aem-content",
         "name": "hitTemplate",
         "label": "Hit Template",
-        "value": ""
+        "value": "",
+        "hidden": true
       },
       {
         "component": "aem-content",
         "name": "noResultsTemplate",
         "label": "No Results Template",
-        "value": ""
+        "value": "",
+        "hidden": true
       }
     ]
   }
