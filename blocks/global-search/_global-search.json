@@ -25,16 +25,14 @@
           "valueType": "string",
           "name": "appId",
           "label": "App Id",
-          "value": "",
-          "hidden": true
+          "value": ""
         },
         {
           "component": "text",
           "valueType": "string",
           "name": "apiKey",
           "label": "API Key",
-          "value": "",
-          "hidden": true
+          "value": ""
         }
       ]
     }

@@ -44,13 +44,15 @@
   {
     "id": "global-search",
     "components": [
-      "search-index"
+      "search-index",
+      "search-box"
     ]
   },
   {
     "id": "search-results",
     "components": [
-      "search-index"
+      "search-index",
+      "search-box"
     ]
   }
 ]

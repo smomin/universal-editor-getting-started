@@ -223,16 +223,14 @@
         "valueType": "string",
         "name": "appId",
         "label": "App Id",
-        "value": "",
-        "hidden": true
+        "value": ""
       },
       {
         "component": "text",
         "valueType": "string",
         "name": "apiKey",
         "label": "API Key",
-        "value": "",
-        "hidden": true
+        "value": ""
       }
     ]
   },
@@ -244,16 +242,14 @@
         "valueType": "string",
         "name": "appId",
         "label": "App Id",
-        "value": "",
-        "hidden": true
+        "value": ""
       },
       {
         "component": "text",
         "valueType": "string",
         "name": "apiKey",
         "label": "API Key",
-        "value": "",
-        "hidden": true
+        "value": ""
       }
     ]
   },
@@ -265,22 +261,31 @@
         "valueType": "string",
         "name": "indexName",
         "label": "Index Name",
-        "value": "",
-        "hidden": true
+        "value": ""
       },
       {
         "component": "aem-content",
         "name": "hitTemplate",
         "label": "Hit Template",
-        "value": "",
-        "hidden": true
+        "value": ""
       },
       {
         "component": "aem-content",
         "name": "noResultsTemplate",
         "label": "No Results Template",
-        "value": "",
-        "hidden": true
+        "value": ""
+      }
+    ]
+  },
+  {
+    "id": "search-box",
+    "fields": [
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "placeholderText",
+        "label": "Placeholder Text",
+        "value": ""
       }
     ]
   }

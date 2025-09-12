@@ -51,6 +51,12 @@
       "components": [
         "search-index"
       ]
+    },
+    {
+      "id": "global-search",
+      "components": [
+        "search-index"
+      ]
     }
   ]
 }
