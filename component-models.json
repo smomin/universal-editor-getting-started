@@ -190,6 +190,27 @@
     ]
   },
   {
+    "id": "global-search",
+    "fields": [
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "appId",
+        "label": "App Id",
+        "value": "",
+        "key-value": true
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "apiKey",
+        "label": "API Key",
+        "value": "",
+        "key-value": true
+      }
+    ]
+  },
+  {
     "id": "hero",
     "fields": [
       {
@@ -216,40 +237,15 @@
     ]
   },
   {
-    "id": "search-results",
+    "id": "search-box",
     "fields": [
       {
         "component": "text",
         "valueType": "string",
-        "name": "appId",
-        "label": "App Id",
-        "value": ""
-      },
-      {
-        "component": "text",
-        "valueType": "string",
-        "name": "apiKey",
-        "label": "API Key",
-        "value": ""
-      }
-    ]
-  },
-  {
-    "id": "global-search",
-    "fields": [
-      {
-        "component": "text",
-        "valueType": "string",
-        "name": "appId",
-        "label": "App Id",
-        "value": ""
-      },
-      {
-        "component": "text",
-        "valueType": "string",
-        "name": "apiKey",
-        "label": "API Key",
-        "value": ""
+        "name": "placeholderText",
+        "label": "PlaceHolder Text",
+        "value": "",
+        "key-value": true
       }
     ]
   },
@@ -261,31 +257,43 @@
         "valueType": "string",
         "name": "indexName",
         "label": "Index Name",
-        "value": ""
+        "value": "",
+        "key-value": true
       },
       {
         "component": "aem-content",
         "name": "hitTemplate",
         "label": "Hit Template",
-        "value": ""
+        "value": "",
+        "key-value": true
       },
       {
         "component": "aem-content",
         "name": "noResultsTemplate",
         "label": "No Results Template",
-        "value": ""
+        "value": "",
+        "key-value": true
       }
     ]
   },
   {
-    "id": "search-box",
+    "id": "search-results",
     "fields": [
       {
         "component": "text",
         "valueType": "string",
-        "name": "placeholderText",
-        "label": "Placeholder Text",
-        "value": ""
+        "name": "appId",
+        "label": "App Id",
+        "value": "",
+        "key-value": true
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "apiKey",
+        "label": "API Key",
+        "value": "",
+        "key-value": true
       }
     ]
   }

@@ -26,21 +26,21 @@
           "name": "indexName",
           "label": "Index Name",
           "value": "",
-          "hidden": true
+          "key-value": true
         },
         {
           "component": "aem-content",
           "name": "hitTemplate",
           "label": "Hit Template",
           "value": "",
-          "hidden": true
+          "key-value": true
         },
         {
           "component": "aem-content",
           "name": "noResultsTemplate",
           "label": "No Results Template",
           "value": "",
-          "hidden": true
+          "key-value": true
         }
       ]
     }

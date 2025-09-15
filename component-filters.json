@@ -16,8 +16,8 @@
       "cards",
       "columns",
       "fragment",
-      "global-search",
-      "search-results"
+      "search-results",
+      "global-search"
     ]
   },
   {
@@ -44,15 +44,37 @@
   {
     "id": "global-search",
     "components": [
-      "search-index",
+      "search-index"
+    ]
+  },
+  {
+    "id": "search-results",
+    "components": [
+      "search-box"
+    ]
+  },
+  {
+    "id": "global-search",
+    "components": [
       "search-box"
     ]
   },
   {
     "id": "search-results",
     "components": [
-      "search-index",
-      "search-box"
+      "search-index"
+    ]
+  },
+  {
+    "id": "global-search",
+    "components": [
+      "search-index"
+    ]
+  },
+  {
+    "id": "search-results",
+    "components": [
+      "search-index"
     ]
   }
 ]
