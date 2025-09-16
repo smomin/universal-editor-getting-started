@@ -1,5 +1,5 @@
 mountpoints:
   /:
-    url: "https://author-p28413-e1544190.adobeaemcloud.com/bin/franklin.delivery/smomin/universal-editor-getting-started/main"
+    url: "https://author-p28413-e1765753.adobeaemcloud.com/bin/franklin.delivery/smomin/universal-editor-getting-started/main"
     type: "markup"
     suffix: ".html"
