@@ -1,9 +1,13 @@
 import '../../scripts/lib-algoliasearch.js';
 import '../../scripts/lib-autocomplete.js';
+import { readBlockConfig } from '../../scripts/aem.js';
 
 export default function decorate(block) {
-  const {algoliasearch} = window;
-  const {autocomplete, getAlgoliaResults} = window['@algolia/autocomplete-js'];
+  const { algoliasearch } = window;
+  const { autocomplete, getAlgoliaResults } = window['@algolia/autocomplete-js'];
+
+  const config = readBlockConfig(block);
+  console.log(config);
 
   const searchClient = algoliasearch(
     '0EXRPAXB56',
@@ -13,10 +17,10 @@ export default function decorate(block) {
   autocomplete({
     container: block,
     placeholder: 'Enter your query',
-    onSubmit({state}) {
+    onSubmit({ state }) {
       window.location.href = `search?query=${state.query}&queryID=${state.context.queryID}`;
     },
-    getSources({query}) {
+    getSources({ query }) {
       return [
         {
           sourceId: 'products',
@@ -41,7 +45,7 @@ export default function decorate(block) {
             });
           },
           templates: {
-            item({item, components, html}) {
+            item({ item, components, html }) {
               return html`
                   <div class="aa-ItemWrapper">
                       <div class="aa-ItemContent">
@@ -56,15 +60,15 @@ export default function decorate(block) {
                           <div class="aa-ItemContentBody">
                               <div class="aa-ItemContentTitle">
                                   ${components.Highlight({
-                                      hit: item,
-                                      attribute: 'title',
-                                  })}
+    hit: item,
+    attribute: 'title',
+  })}
                               </div>
                               <div class="aa-ItemContentDescription">
                                   ${components.Snippet({
-                                      hit: item,
-                                      attribute: 'description',
-                                  })}
+    hit: item,
+    attribute: 'description',
+  })}
                               </div>
                           </div>
                           <div class="aa-ItemActions">

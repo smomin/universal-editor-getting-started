@@ -2,7 +2,7 @@ import '../../scripts/lib-algoliasearch.js';
 import '../../scripts/lib-instant-search.js';
 
 export default function decorate(block) {
-  const {algoliasearch, instantsearch} = window;
+  const { algoliasearch, instantsearch } = window;
   const {
     searchBox, hits, configure, panel, refinementList, pagination,
   } = instantsearch.widgets;
@@ -38,12 +38,12 @@ export default function decorate(block) {
       stateMapping: {
         stateToRoute(uiState) {
           return {
-            query: uiState['WKND_Commerce_PROD_US_EN_Pages'].query,
+            query: uiState.WKND_Commerce_PROD_US_EN_Pages.query,
           };
         },
         routeToState(routeState) {
           return {
-            ['WKND_Commerce_PROD_US_EN_Pages']: {
+            WKND_Commerce_PROD_US_EN_Pages: {
               query: routeState.query,
             },
           };
@@ -65,10 +65,10 @@ export default function decorate(block) {
     hits({
       container: '#hits',
       templates: {
-        item: (hit, {html, components}) => html`
+        item: (hit, { html, components }) => html`
           <article>
-            <h1>${components.Highlight({hit, attribute: 'title'})}</h1>
-            <p>${components.Highlight({hit, attribute: 'description'})}</p>
+            <h1>${components.Highlight({ hit, attribute: 'title' })}</h1>
+            <p>${components.Highlight({ hit, attribute: 'description' })}</p>
           </article>
         `,
       },
@@ -77,7 +77,7 @@ export default function decorate(block) {
       hitsPerPage: 8,
     }),
     panel({
-      templates: {header: 'brand'},
+      templates: { header: 'brand' },
     })(refinementList)({
       container: '#brand-list',
       attribute: 'brand',
