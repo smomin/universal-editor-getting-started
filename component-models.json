@@ -284,14 +284,16 @@
         "valueType": "string",
         "name": "appId",
         "label": "App Id",
-        "value": ""
+        "value": "",
+        "key-value": true
       },
       {
         "component": "text",
         "valueType": "string",
         "name": "apiKey",
         "label": "API Key",
-        "value": ""
+        "value": "",
+        "key-value": true
       }
     ]
   }
